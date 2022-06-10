@@ -617,6 +617,7 @@ void rrdlabels_get_value_to_buffer_or_null(DICTIONARY *labels, BUFFER *wb, const
             buffer_sprintf(wb, "%s%s%s", quote, lb->value, quote);
         else
             buffer_strcat(wb, null);
+        break;
     }
     dfe_done(v);
 }
